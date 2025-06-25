@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  text-align: left;
+}
+
+.container img {
+  width: 400px;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 20px ;
+}
+
+.work_list {
+  display: flex;
+  text-align: left;
+  margin: 0px;
+  padding: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+  border: 2px solid #ccc;
+}
+
+.work_list img {
+  width: 210px;
+  height: auto;
+}
+
+.image {
+  border: 1px solid white;
+  width: 215px;
+  height: 400px;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  margin: 12px;
+}
