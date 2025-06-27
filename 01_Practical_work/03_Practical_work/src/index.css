@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+h1 {
+  margin-top: -14px;
+}
+
 .container {
   display: flex;
   text-align: left;
@@ -43,8 +47,4 @@
 
 p {
   text-align: left; 
-}
-
-h1 {
-  margin-top: -14px;
 }
