@@ -1,0 +1,105 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.Resviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ReviewList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.ReviewList li {
+  width: 700px;
+  height: 180px;
+  background-color: #ccc;;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username {
+  font-weight: bold;
+}
+
+
+
+.CreateReview {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.CreateReview h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.CreateReview label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.CreateReview input[type="text"],
+.CreateReview input[type="number"],
+.CreateReview input[type="date"] {
+  margin-top: 6px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.CreateReview input[type="text"]:focus,
+.CreateReview input[type="number"]:focus,
+.CreateReview input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.CreateReview button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.CreateReview button:hover {
+  background-color: #0056b3;
+}
