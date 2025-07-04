@@ -1,0 +1,65 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.userCard {
+  width: 1000px;
+  height: 500px;
+  text-align: left;
+}
+
+.userCardForm {
+  display: flex;
+  margin-left: 20px;
+}
+
+.userCardForm input {
+  margin-left: 20px;
+  width: 240px;
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.userCardLeft {
+  width: 400px;
+  height: 500px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.userCardLeft p{
+  margin-top: 24px;
+}
+
+.userCardLeft img {
+  width: 350px;
+}
+
+.userCardRight {
+  width: 400px;
+  height: 500px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.userCardRight > p:first-child {
+  margin-top: 195px;
+}
+
+.userCardRight p{
+  margin-top: 24px;
+}
+
+.userFollow {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+}
+
+.userFollow  p {
+  margin-top: 24px;
+}
