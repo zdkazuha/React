@@ -11,13 +11,13 @@ import Biography from './components/Biography'
 import BestWork from './components/BestWork'
 
 const WORKS = [
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
-  { title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 1, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 2, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 3, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 4, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 5, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 6, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
+  { id: 7, title: "Мона Лиза", age: "1503–1506", src: "./public/img/Mona_Lisa.jpg" },
 ];
 
 function App() {
