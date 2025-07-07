@@ -13,7 +13,7 @@ export default function ToDoList({ tasksList }) {
         
         const importantCount = tasksList.filter(t => t.important).length;
         setValue_2(importantCount);
-    }, [tasksList, setValue_1, setValue_2]);
+    }, [tasksList]);
     
     function removeItem(id, isComplete) {
         if (!isComplete) {
