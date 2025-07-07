@@ -11,7 +11,7 @@ export default function ToDoList({ tasksList }) {
         const incompleteCount = tasksList.filter(t => !t.complete).length;
         setValue_1(incompleteCount);
         
-        const importantCount = tasksList.filter(t => t.important).length;
+        const importantCount = tasksList.filter(t => t.important && !t.complete).length;
         setValue_2(importantCount);
     }, [tasksList]);
     
