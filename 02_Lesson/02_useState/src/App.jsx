@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import React, { useContext } from 'react';
 import './App.css'
 import ToDoList from './components/ToDoList'
-import Counter from './components/Counter'
+import { CounterContext, CounterContext_2 } from './Contexts/counter.context';
 
 const TASKS = [
   { id: 1, title: 'First task', important: false, complete: false, date: '01.04.2023' },
@@ -16,17 +17,20 @@ const TASKS = [
   { id: 8, title: 'Eighth task', important: false, complete: true }
 ]
 
+
 function App() {
-  const [count, setCount] = useState(0)
+  const { value: incomplete } = useContext(CounterContext);
+  const { value: important } = useContext(CounterContext_2);
 
   return (
     <>
       <h1>Hello React</h1>
-      <Counter />
+      <p>Незавершені завдання: {incomplete}</p>
+      <p>Важливі завдання: {important}</p>
       <hr />
       <ToDoList tasksList={TASKS} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

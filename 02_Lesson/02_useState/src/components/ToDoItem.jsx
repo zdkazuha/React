@@ -1,16 +1,13 @@
-import { useState } from "react";
+import React, { useContext, useState } from 'react'
+import { CounterContext } from '../Contexts/counter.context';
 
 export default function ToDoItem({ id, title, date, complete, important, removeFunction }) {
-
-    // { state } allows component to automatically re-render when changed
+    const { value_1, setValue } = useContext(CounterContext);
     const [status, setStatus] = useState(complete);
 
     function toggleStatus() {
-        // complete = !complete;
-        // status = !status;
         setStatus(!status);
-
-        // alert("Statis: " + status)
+        setValue(value => value + (status ? 1 : -1));
     }
 
     return (
@@ -18,8 +15,11 @@ export default function ToDoItem({ id, title, date, complete, important, removeF
             <input type="checkbox" checked={status} />
             {important ? <span className="important">!</span> : ""}
             {title ?? "No title"}
-            <span class="deadline">01.04.2023</span>
-            <button onClick={() => removeFunction(id)}>Del</button>
+            <span className="deadline">{date || "01.04.2023"}</span>
+            <button onClick={(e) => {
+                e.stopPropagation();
+                removeFunction(id, status);
+            }}>Del</button>
         </li>
     );
 }
