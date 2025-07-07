@@ -6,10 +6,17 @@ export default function Layout() {
         <div className='Layout'>
             <header>
                 <nav>
-                    <ul>
-                        <li><Link to="/biography">Biography</Link></li>
-                        <li><Link to="/best work">Best Work</Link></li>
-                        <li><Link to="/works">Works</Link></li>
+                    <ul className="Menu">
+                        <p id="menu">Menu</p>
+                        <li>
+                            <p>👤</p>
+                            <Link to="/biography">Biography</Link></li>
+                        <li>
+                            <p>🏆</p>
+                            <Link to="/best work">Best Work</Link></li>
+                        <li>
+                            <p>🖼️</p>
+                            <Link to="/works">Works</Link></li>
                     </ul>
                 </nav>
             </header>
