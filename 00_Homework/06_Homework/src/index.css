@@ -45,6 +45,13 @@ ul li .deadline {
   text-decoration-thickness: 2px;
 }
 
+#Text {
+  width: 100px;
+  height: 30px;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
 button {
   width: 200px;
   height: 50px;
