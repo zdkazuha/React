@@ -1,0 +1,143 @@
+.CardList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.Card {
+  width: 350px;
+  height: 575px;
+  margin-bottom: 200px;
+  border: 1px solid gray;
+  margin: 10px;
+}
+
+.Top {
+  height: 350px;
+}
+
+.Bottom {
+  height: 190px;
+}
+
+.Top img {
+  width: 350px;
+  height: 350px;
+}
+
+.Heart {
+  position: relative;
+  top: -364px;
+  left: 290px;
+}
+
+.heart {
+  font-size: 32px;
+  width: 25px;
+}
+
+.Discount {
+  border: 1px solid gray;
+  width: 40px;
+  border-radius: 10px;
+  background-color: red;
+  position: relative;
+  top: -415px;
+  left: 5px;
+}
+
+.notDiscount {
+  display: none;
+}
+
+.NewPrice {
+  font-size: 24px;
+  color: red;
+  font-weight: normal;
+  margin-top: -5px;
+}
+
+.OldPrice {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.Price {
+  font-size: 20px;
+}
+
+.Boart {
+  float: right;
+  margin-right: 15px;
+  font-size: 24px;
+  position: relative;
+  top: -40px;
+}
+
+p,
+input,
+label {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.CreateCard {
+  width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.CreateCard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.CreateCard label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #444;
+}
+
+.CreateCard input[type="text"],
+.CreateCard input[type="number"] {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.CreateCard input[type="checkbox"] {
+  margin-top: 8px;
+  transform: scale(1.2);
+  align-self: start;
+}
+
+.CreateCard button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  width: 100%;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.CreateCard button:hover {
+  background-color: #303f9f;
+}
